@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bostro | Your First Choice</title>
+	<meta content="width=device-width,initial-scale=1.0" name="viewport">
+	<meta content="Bostro, BD Cloth Collection," name="keywords"/>
+	<meta content="index,follow" name="robots"/>
+	<meta content="text/html" http-equiv="Content-Type"/>
+	<meta content="EN" name="language"/>
+	<meta content="Bostro" name="author"/>
+	
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+		function openNav() {
+		document.getElementById("mySidenav").style.width = "65%";
+		}
+		function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+		}
+		function search() {
+		document.getElementById("myTopSearch").style.height = "75px";
+		}
+		function closeSearch() {
+		document.getElementById("myTopSearch").style.height = "0";
+		}
+	</script>
+</head>
+<body>
+	<!--sidenav-->
+	<div id="mySidenav" class="sidenav">
+		<div class="branding">
+			<img src="img/bostro-logo.png" alt="bostro-logo">
+		</div>
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="icons/close.png"></a>
+		<a href="#">Home</a>
+		<a href="#services">Shop</a>
+		<a href="#pricing">Products</a>
+		<a href="#about" >About</a>
+		<a href="#contact" >Contact</a>
+	</div>
+	<!--sidenav end-->
+	<!--top search field start-->
+	<div id="myTopSearch" class="top-search">
+		<div class="container">
+			<form>
+				<div>
+					<input type="text" placeholder="Search products...">
+					<button type="submit">Search</button>
+				</div>
+			</form>
+			<a href="javascript:void(0)" class="closebtn" onclick="closeSearch()"><img src="icons/close.png"></a>
+		</div>
+	</div>
+	<!--top search field end-->
+	<header>
+		<div class="container">
+			<div class="branding">
+				<img src="img/bostro-logo.png" alt="bostro-logo">
+			</div>
+			<div class="nav">
+				<ul>
+					<li class="active"><a href="" >Home</a></li>
+					<li><a href="" >Shop</a></li>
+					<li><a href="" >Categories</a></li>
+					<li><a href="" >Blog</a></li>
+					<li><a href="" >About</a></li>
+					<li><a href="" >Contact</a></li>
+				</ul>
+			</div>
+			<div class="top-menu">
+				<div class="search" onclick="search()">
+					<img src="icons/search.png">
+				</div>
+				<div class="cart">
+					<a href="" ><img src="icons/shopping-cart.png"></a>
+				</div>
+				<div class="drawer" onclick="openNav()">
+					<img src="icons/menu.png">
+				</div>
+			</div>
+		</div>
+	</header>
+</body>
+</html>
